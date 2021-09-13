@@ -1,0 +1,34 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body,html{
+  height:100%;
+}
+
+.wrapper{
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width:80vw;
+  background-image: linear-gradient(to bottom right,red,blue);
+}
+
+.game-board{
+  display:grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+}
+.divs{
+  border:black solid 2px;
+}
+.divs:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
