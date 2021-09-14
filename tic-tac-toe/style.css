@@ -14,11 +14,25 @@ body,html{
 .wrapper{
   margin: 0 auto;
   display:flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   height:100vh;
   width:80vw;
   background-image: linear-gradient(to bottom right,red,blue);
+}
+
+.back-link{
+  font-size: 2.5em;
+  padding:20px 40px;
+  border:rgb(107, 238, 199) 2px solid;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+.back-link:hover{
+  background-color: gray;
+  color:white;
+  transition:0.4s;
 }
 
 .game-board{
@@ -28,6 +42,11 @@ body,html{
 }
 .divs{
   border:black solid 2px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color:white;
 }
 .divs:hover{
   background-color: rgba(0, 0, 0, 0.3);
